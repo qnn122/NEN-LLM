@@ -21,8 +21,7 @@ A typical neural entinty linking architecture [1] is depicted in the below figur
 
 ## Problem statement
 While neural Named Entity Normalization (NEN) offers a significantly better approach than rule-based systems by capturing entity semantics of the entity and its surrounding context through pre-trained encoders, it faces challenges in handling the complex and subtle relationships between similar phenotypes in rare disease ontologies. This challenge is further exacerbated by the scarcity of training data in specialized areas like rare diseases. This project aims to address these challenges by leveraging large language models (LLMs). With their vast built-in knowledge base and powerful reasoning capabilities. The method is illustrated in the following figure:
-![](assets/img/llm_rag_emb.png | =200x200)
-![](assets/img/llm_rag_infer.png)
+![](assets/img/llm_rag.png)
 
 
 ## Experiments
