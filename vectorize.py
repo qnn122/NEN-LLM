@@ -135,16 +135,16 @@ if __name__ == "__main__":
     #Create embedding object
     #embed_model_name = 'text-embedding-ada-002'
 
-    #embedding = OpenAIEmbeddings(
-    #    openai_api_key=os.getenv('OPENAI_API_KEY')
-    #)
+    emb_func = OpenAIEmbeddings(
+       openai_api_key=os.getenv('OPENAI_API_KEY')
+    )
 
-    from langchain.embeddings import SentenceTransformerEmbeddings
+    #from langchain.embeddings import SentenceTransformerEmbeddings
 
-    emb_model_name = "jinaai/jina-embeddings-v2-base-en"
+    ##emb_model_name = "jinaai/jina-embeddings-v2-base-en"
     #emb_model_name = "Salesforce/SFR-Embedding-Mistral"
     #embedding = embedding_functions.SentenceTransformerEmbeddingFunction(model_name=emb_model_name)
-    embedding  = SentenceTransformerEmbeddings(model_name=emb_model_name)
+    #embedding  = SentenceTransformerEmbeddings(model_name=emb_model_name)
 
-    fire.Fire(vectorize(embedding))
+    fire.Fire(vectorize(emb_func))
     print("Done")
