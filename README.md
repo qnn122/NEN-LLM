@@ -1,4 +1,4 @@
-### LLM-guided Bio Named Entity Normalisation
+# LLM-guided Bio Named Entity Normalisation
 
 ## Named-Entity Normalisation
 The task of **Named Entity Normalization (Entity Linking)** is defined as follows:
